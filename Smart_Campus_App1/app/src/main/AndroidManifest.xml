@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smart_campus_app1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="util.StudentUser"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Smart_Campus_App1"
+
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Teacher_Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Student_Recieve_Message"
+            android:exported="false" />
+        <activity
+            android:name=".list_of_issues"
+            android:exported="false" />
+        <activity
+            android:name=".Return_Book"
+            android:exported="false" />
+        <activity
+            android:name=".Book_Issue"
+            android:exported="false" />
+        <activity
+            android:name=".Recommended_Book"
+            android:exported="false" />
+        <activity
+            android:name=".Save_Issue"
+            android:exported="false" />
+        <activity
+            android:name=".Management_Issue"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Student" />
+        <activity android:name=".Signup" />
+        <activity android:name=".student_point_at_issue" />
+        <activity android:name=".Teacher" />
+    </application>
+
+</manifest>

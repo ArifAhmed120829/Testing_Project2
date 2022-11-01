@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn= "navigation_view">
+
+<group
+    android:checkableBehavior = "single"
+    android:id = "@+id/group1">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/nav_notice"
+        android:title="DIU Notice"
+        android:icon="@drawable/ic_notice"/>
+
+
+</group>
+    <group
+        android:checkableBehavior="none"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_setting"
+            android:title="About SC Apps"
+            android:icon="@drawable/ic_android_24"/>
+
+    </group>
+    <item
+        android:title="App">
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:title="Exit"
+                android:icon="@drawable/ic_exit"/>
+
+
+
+        </menu>
+    </item>
+
+
+</menu>
