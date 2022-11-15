@@ -6,10 +6,13 @@ import android.os.Bundle;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.Toast;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +64,8 @@ public class Fragment0 extends Fragment  implements View.OnClickListener {
 
     }
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -99,7 +104,8 @@ public class Fragment0 extends Fragment  implements View.OnClickListener {
                 Toast.makeText(Fragment0.this.getActivity(), "Not added yet", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.Calendar_M:
-                Toast.makeText(Fragment0.this.getActivity(), "Not added yet2", Toast.LENGTH_SHORT).show();
+                i = new Intent(Fragment0.this.getActivity(), Calendar.class);
+                startActivity(i);
                 break;
             case R.id.Notice_M:
                 Toast.makeText(Fragment0.this.getActivity(), "Not added yet3", Toast.LENGTH_SHORT).show();
